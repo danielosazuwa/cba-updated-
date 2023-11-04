@@ -1,0 +1,283 @@
+extend layout
+
+block styleBlock 
+    style.  
+        .trending-courses {
+            background: #2C2B5E
+        }
+
+        .trending-courses .event-content {
+            padding: 25px;
+            background: #fff
+        }
+
+        .event-footer {
+            border-top: 1px solid #ccc; background: #fff; padding: 12px 25px; font-weight: bold; font-size: 16px
+        }
+
+        .about-content p { font-size: 16px }
+
+        .event-content h4 { color: #303030 }
+
+        .trending-courses h3 { font-size: 30px }
+
+        .trending-courses h4 { font-size: 20px }
+
+        .bullet li { font-size: 18px }
+
+        .testimonial { border: 2px solid #16255C; border-radius: 10px; background: #D9D9D9; padding: 10px 15px }
+
+        .testimonial h3 { color: #2c2b5e; font-size: 19px }
+
+        .testimonial .inner { background: #fff; border-radius: 8px; padding: 9px }
+
+
+block content 
+    section#slider-container.slider-area.three
+        .slider-owl.owl-theme.owl-carousel
+
+            .single-slide.item(style='background-image: url(img/tech.jpeg)')
+                .slider-content-area
+                    .container
+                        .row
+                            .col-lg-7.col-md-offset-left-5
+                                .slide-content-wrapper
+                                    .slide-content
+                                        h2 OUR ACADEMY 
+                                        p
+                                            | BUILDING TECH LEADERS ONE STUDENT AT A TIME
+                                        a.default-btn(href='/tech-training') Learn more
+
+            .single-slide.item(style='background-image: url(img/slider/work-experience.png)')
+                .slider-content-area
+                    .container
+                        .row
+                            .col-lg-7.col-md-offset-left-5
+                                .slide-content-wrapper.text-start
+                                    .slide-content
+                                        h2 WORK EXPERIENCE 
+                                        p
+                                            | TRAINING IS OVER... WHAT IS NEXT ??
+                                        a.default-btn(href='/work-experience') Learn more
+
+            .single-slide.item(style='background-image: url(img/slider/partnership.png)')
+                .slider-content-area
+                    .container
+                        .row
+                            .col-lg-7.col-md-offset-left-5
+                                .slide-content-wrapper.text-start
+                                    .slide-content
+                                        h2 PARTNERSHIP 
+                                        p
+                                            | STRATEGIC PARTNERSHIPS TO FOSTER INNOVATION
+                                        a.default-btn(href='/partnership') Learn more
+
+            .single-slide.item(style='background-image: url(img/slider/consulting.png)')
+                .slider-content-area
+                    .container
+                        .row
+                            .col-lg-7.col-md-offset-left-5
+                                .slide-content-wrapper.text-start
+                                    .slide-content
+                                        h2 CONSULTING
+                                        p CONSULTING FOR TOMORROW
+                                        a.default-btn(href='/consultancy') Learn more
+
+
+    // About Start
+    .about-area.pb-135.pt-30.bg-light
+        .container
+            .row
+                .col-md-12.text-center 
+                    .about-content
+                        h2.mt-5.mb-4 Welcome to 
+                            span DeCareer Builders' Academy
+                .col-md-6
+                    .about-content.mt-4
+                        p Your gateway to success in the ever-evolving tech world. At Career Builders' Academy, our vision is to empower aspiring tech 
+                            | enthusiasts and professionals with the knowledge and skills they need to thrive in the tech industry.  
+
+                        p We are a leading tech training academy, deeply committed to delivering top-notch education and fostering professional 
+                            | development. We take pride in offering high-quality, professional training that adheres to globally recognized methodologies.
+                            | Our commitment to maintaining the highest educational standards has earned us the trust of numerous enterprises worldwide. 
+                            | Your future in tech starts here!
+                .col-md-6   
+                    .aboutimg
+                        img(src='img/about/image.png' alt='about' style="width: 93%").float-end.mt-2
+
+
+    // Courses Area Start
+    .courses-area.pt-100.pb-100.text-center.mb-3
+        .container
+            .row
+                .col-12
+                    .section-title
+                        img(src='img/icon/section.png' alt='section-title')
+                        h2 What we Offer
+            .row
+                .col-lg-3.col-md-6
+                    .single-course
+                        .course-img
+                            a(href='/tech-training')
+                                img(src='img/products/p1.png' alt='course')
+                                .course-hover
+                                    i.fa.fa-link
+                        .course-content
+                            h3
+                                a(href='/tech-training') Our Academy
+                            p At Career Builders’ Academy, our mission is to empower individuals and businesses...
+
+                            a.default-btn(href='/tech-training') read more
+                .col-lg-3.col-md-6
+                    .single-course
+                        .course-img
+                            a(href='/consultancy')
+                                img(src='img/products/p2.png' alt='course')
+                                .course-hover
+                                    i.fa.fa-link
+                        .course-content
+                            h3
+                                a(href='/consultancy') Consultancy
+                            p We bridge the gap between technology and businesses, enabling our clients to... 
+                            a.default-btn(href='/consultancy') read more
+                .col-lg-3.col-md-6
+                    .single-course.mb-0
+                        .course-img
+                            a(href='/partnership')
+                                img(src='img/products/p3.png' alt='course')
+                                .course-hover
+                                    i.fa.fa-link
+                        .course-content
+                            h3
+                                a(href='/partnership') Partnership
+                            p Our partnership offers opportunities for co-branding, joint marketing campaigns...
+                            a.default-btn(href='/partnership') read more
+                .col-lg-3.col-md-6
+                    .single-course.mb-0
+                        .course-img
+                            a(href='/work-experience')
+                                img(src='img/products/p4.png' alt='course')
+                                .course-hover
+                                    i.fa.fa-link
+                        .course-content
+                            h3
+                                a(href='/work-experience') Work Experience
+                            p Our partnership offers opportunities for co-branding, joint marketing campaigns...
+                            a.default-btn(href='/work-experience') read more
+
+    .trending-courses.pb-100.pt-80
+        .container
+            .row
+                .col-12.partners
+                    h3.text-center.text-white.mb-5 TRENDING COURSES
+            .row 
+                .col-md-4.col-xs-12
+                    .single-event.mb-35
+                        .event-content.text-start
+                            h4.mb-3 Professional Product Owner
+                            p The Product Owner is the voice of the customer within Agile teams, responsible for defining and prioritizing features....
+
+                        .event-footer  6 Weeks <span class='float-end'>£450/N400,000 </span> 
+                            p(style="text-align:right") 
+                                a(href="#") Read More
+                         
+
+                .col-md-4.col-xs-12
+                    .single-event.mb-35
+                        .event-content.text-start
+                            h4.mb-3 Professional Scrum Master
+                            p The Scrum Master is the coach, facilitator, and organiser of an agile team; responsible for motivating the team, removing.....
+                        .event-footer 6 Weeks <span class='float-end'>£350/N300,000</span>
+                            p(style="text-align:right") 
+                                a(href="#") Read More
+
+                .col-md-4.col-xs-12
+                    .single-event.mb-35
+                        .event-content.text-start
+                            h4.mb-3 UI/UX Desgin
+                            p The UI/UX Designer is responsible for creating digital products and interfaces that are intuitive and user-friendly. This course will....
+                        .event-footer 6 Weeks <span class='float-end'>£350/N300,000</span>
+                            p(style="text-align:right") 
+                                a(href="#") Read More
+
+            .row.mt-4 
+                .col-md-4.col-xs-12
+                    .single-event.mb-35
+                        .event-content.text-start
+                            h4.mb-3 Business Analysis
+                            p The Business Analyst functions as a link between the Product Owner and Developers in Agile teams, ensuring that products are.....
+                        .event-footer 6 Weeks <span class='float-end'>£450/N400,000</span>
+                            p(style="text-align:right") 
+                                a(href="#") Read More
+
+                .col-md-4.col-xs-12
+                    .single-event.mb-35
+                        .event-content.text-start
+                            h4.mb-3 Product Development
+                            p(class="mb-4") This course will focus on implementing a product life cycle from design to .......
+                             
+                            
+                        .event-footer 8 Weeks <span class='float-end'>£400/N450,000</span>
+                            p(style="text-align:right") 
+                                a(href="#") Read More
+
+                .col-md-4.col-xs-12
+                    .single-event.mb-35
+                        .event-content.text-start
+                            h4.mb-3 Business Process Architecture
+                            p Learn practical skills in modelling, analysing and optimising business processes using industry-standard notations...
+                        .event-footer 6 Weeks <span class='float-end'>£350/N300,000</span>
+                            p(style="text-align:right") 
+                                a(href="#") Read More
+
+
+
+    // Subscribe Start
+    .subscribe-area.pt-50.pb-70
+        .container
+            .row
+                .col-lg-8.offset-lg-2
+                    .subscribe-content.section-title.text-center
+                        h2.m-4 WHY TRAIN WITH US?
+
+                    .row 
+                        .col-md-6 
+                            ul.bullet  
+                                li Immersive Learning Experience
+                                li Cutting-Edge Training
+                                li Global Alumni Network
+                                li Real Life Projects
+                                li Career Support Services
+                                li Job Ready Skills
+
+                            br/ 
+                            br/
+                            a(class="mb-5" href="/work-experience").default-btn Enrol Now
+                        .col-md-6
+                            div
+                                #carouselExampleControls.carousel.slide(data-ride='carousel', style=" text-align:center; background: #D9D9D9; border: 2px solid #16255C; border-radius: 10px;")
+                                    .carousel-inner
+                                        .carousel-item.active(style="background: #D9D9D9")
+                                            h1(style="color:#2c2b5e; margin: 10px 10px; font-size: 18px") TESTIMONIALS   
+                                            img(src="/img/rating.png", alt="", width="170px" style="margin= 10px 20px")
+                                            div(style="display:flex; justify-content:center")
+                                                img.d-block.w-20(src='/img/image18.png', alt='First slide', width="150px" style="margin-bottom: 20px; margin-top: 10px")
+                                            div(style="background: ##d9d9d9; text-align: center; padding: 28px") 
+                                                p(style="background: #fff; color: #666666; border-radius: 10px") The classes were very informative and interesting. Oluyemi did everything to make sure no one was left behind. I look forward to joining the next Data Analytics class.
+                                            p(style="margin-bottom: 20px") -Raheemat
+                                        .carousel-item
+                                            h1(style="color:#2c2b5e; margin: 10px 10px; font-size: 18px") TESTIMONIALS   
+                                            img(src="/img/rating.png", alt="", width="170px" style="margin= 10px 20px")
+                                            div(style="display:flex; justify-content:center")
+                                                img.d-block.w-20(src='/img/image18.png', alt='First slide', width="150px" style="margin-bottom: 20px; margin-top: 10px")
+                                            div(style="background: ##d9d9d9; text-align: center; padding: 28px") 
+                                                p(style="background: #fff; color: #666666; border-radius: 10px") The classes were very informative and interesting. Oluyemi did everything to make sure no one was left behind. I look forward to joining the next Data Analytics class.
+                                            p(style="margin-bottom: 20px") -Raheemat
+                                            //- .carousel-item
+                                            //-   img.d-block.w-20(src='/img/rating.png', alt='Third slide')
+                                    a.carousel-control-prev(style="", href='#carouselExampleControls', role='button', data-bs-slide='prev')
+                                        span.carousel-control-prev-icon(aria-hidden='true')
+                                        span.sr-only Previous
+                                    a.carousel-control-next(, href='#carouselExampleControls', role='button', data-bs-slide='next')
+                                            span.carousel-control-next-icon(aria-hidden='true')
+                                            span.sr-only Next    

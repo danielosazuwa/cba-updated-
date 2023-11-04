@@ -1,0 +1,54 @@
+extend layout 
+
+block styleBlock 
+  style. 
+    .banner-area {
+      background: url(/img/banner/tech-training.jpg) no-repeat scroll center center / cover;
+    }
+
+    .enroll { font-size: 30px }
+
+block content 
+  .banner-area-wrapper
+    .banner-area.text-center
+      .container
+        .row
+          .col-12
+            .banner-content-wrapper
+              .banner-content
+                h2 Enroll
+  .container
+    .row
+      .col-md-6.col-sm-12.col-xs-12.mt-4.mb-5.bg-light.px-5.py-5
+        form(method="post" action="/send-email").mt-2
+          .mb-3
+            label.form-label First Name
+            input.form-control(type="text" name="fname" required)
+          .mb-3
+            label.form-label Last Name
+            input.form-control(type="text" name="lname" required)
+          .mb-3
+            label.form-label Email
+            input.form-control(type="email" name="email" required)
+          .mb-3
+            label.form-label Phone number
+            br/
+            input.form-control#phone(type="text" name="phone")
+          .mb-3
+            label.form-label Select your course of interest
+            input.form-control(type="text" name="course")
+            input(type="hidden" name="category" value="enroll")
+          .mb-3
+            .small.text-muted Please tick this box if you are happy to contacted by a student advisor and would like to receive special course offers by phone, email and SMS
+            .form-check.mt-3
+              input.form-check-input(type="checkbox")
+              label.form-check-label.small Consent
+          .mb-5
+            button.btn.btn-danger.float-end(type="submit") Enroll Now
+
+      .col-md-1
+      .col-md-5
+        h4.enroll.mt-100 Enrol now and get access to the next cohort of candidates
+
+        p.mt-5 
+          .alert.alert-info.lead 77% of our graduates say our trainings improved their ability to get a new job or promotion.
