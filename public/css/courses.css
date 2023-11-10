@@ -23,6 +23,12 @@
     /* color: black; */
 }
 
+.business-analysis-div2 button{
+    background: red; 
+    padding: 10px; 
+    color: white;
+    margin-left: 400px;
+}
 .why-choose{
     text-align: center;
     margin-top: 50px;

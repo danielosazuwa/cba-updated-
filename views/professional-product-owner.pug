@@ -12,6 +12,7 @@ block content
                 .business-analysis-div2
                     h2(style="text-align: center; font-size: 20px; margin-bottom: 10px") PROFESSIONAL PRODUCT OWNER 
                     p As businesses continue to evolve, and strive for greater customer satisfaction, the demand for skilled Product Owners is heightened. Our Product Owner course is designed to equip you with skills such as prioritizing features, collaborating with development teams and delivering customer-centric products. to enable you excel in this role.                    
+                    button Enrol Now
                     p(style=".d-inline-flex.gap-1; color: #2c2b5e; font-weight: bold") Course Modules 
                         a(data-bs-toggle='collapse', href='#collapseExample', role='button', aria-expanded='false', aria-controls='collapseExample')
                             i.fa.fa-caret-down(aria-hidden='true')
@@ -73,15 +74,15 @@ block content
     
     .container 
         .business-last-div
-            .single-analysis-div
+            #people.single-analysis-div
                 img(src="img/courses/people.png", alt="people")
                 p Live Weekend Classes
-            
-            .single-analysis-div
-                img(src="img/courses/rec.png", alt="people")
                 p Access to Class Recording
+            //- .single-analysis-div
+            //-     img(src="img/courses/rec.png", alt="people")
+            //-     p Access to Class Recording
             
-            .single-analysis-div
+            #enrol-btn.single-analysis-div
                 a(href="#") 
                     button Enrol Now
             
@@ -94,3 +95,24 @@ block content
                         li Technical Product Manager
             
             
+    .container 
+        .phone-business-last-div 
+            a(href="#")             
+                button Enrol Now
+            
+            .analyst-oppt
+                p(style="color:white") Alternative Job Titles for a Product Owner
+                    ul(style="list-style-type:disc")
+                    li Product Manager
+                    li Information Technology Business Analyst
+                    li Product Strategist
+                    li Technical Product Manager
+            
+            .phone-analyst-flex
+                .phone-single-analysis-div
+                    img(src="img/courses/people.png", alt="people")
+                    p Live Weekend Classes
+                
+                .phone-single-analysis-div
+                    img(src="img/courses/rec.png", alt="people")
+                    p Access to Class Recording

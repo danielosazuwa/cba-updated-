@@ -296,8 +296,9 @@ a.mb-5.default-btn{margin-top: 20px;}
 .about-text-area{flex-direction: column;}
 .about-altered h3{font-size: 20px;}
 .about-picture-area{width: 100%; margin-top: 10px;}
-.testimonial h3{font-size: 20px;}
-.testimonial p{font-size: 15px;}
+.testimonial h3{font-size: 20px; }
+.testimonial p{font-size: 15px; margin-top: -20px;}
+.partner-img img{width: 70px;height: 40px;}
 }
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {

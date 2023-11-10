@@ -4697,7 +4697,7 @@ a.mb-5.default-btn{
 
 .image-container-deliver{
     position: relative;
-    text-align: center;
+    text-align: left;
 }
 .image-container-deliver img{
     height: 500px; 
@@ -4708,7 +4708,7 @@ a.mb-5.default-btn{
 .overlay-text{
     color: white;
     padding: 5px;
-    font-size: 18px;
+    font-size: 17px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -4742,3 +4742,12 @@ a.mb-5.default-btn{
 .testimonial p { color: #fff; font-size: 21px; line-height: 31px; font-style: italic; }
 
 .testimonial h3 { font-size: 30px; color: #fff }
+
+.partner-img{
+    display: flex;
+    justify-content: center;
+}
+.partner-img img{
+    width: 200px;
+    height: 100px;
+}

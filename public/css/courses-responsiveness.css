@@ -18,6 +18,12 @@
         padding: 10px;
     }
 
+    .business-analysis-div2 button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .business-last-div{
         display: none;
     }
