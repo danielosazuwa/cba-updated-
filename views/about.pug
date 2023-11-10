@@ -12,55 +12,34 @@ block styleBlock
 
         .testimonial { position: relative; z-index: 1000; }
 
-        .testimonial p { color: #fff; font-size: 21px; line-height: 31px }
-
-        .testimonial h3 { font-size: 28px; color: #fff }
-
         .our-offer { background-image:url('/img/about/offer.jpg'); background-repeat: no-repeat; height: 250px;  display: flex; justify-content: center; align-items: center }
 
         .our-offer h4 { font-size: 22px; color: #f8f8f8; }
 block content 
-    .banner-area-wrapper
-        .banner-area.text-center
-            .container
-                .row
-                    .col-12
-                        .banner-content-wrapper
-                            .banner-content
-                                h2 about us
+    img(src="img/about-us-banner.png", alt="")
 
-    .about-area.pb-80.pt-130.bg-light
+    .about-area.pb-80.pt-90.bg-light
         .container
             .row
                 .col
                     .about-content
-                        h3.mb-3 ABOUT US
-                        p At Career Builder's Academy, we believe in nurturing talent and transforming dreams into reality. Our team of industry experts and experienced instructors ensures that you receive the most up-to-date and relevant knowledge in the fast-paced world of technology. We offer a wide array of cutting-edge courses that cover everything from programming languages, data science, artificial intelligence, web development, and much more.
+                        p At DeCareer Builder's Academy, we believe in nurturing talent and transforming dreams into reality. Our team of industry experts and experienced instructors ensures that you receive the most up-to-date and relevant knowledge in the fast-paced world of technology. We offer a wide array of cutting-edge courses that cover everything from programming languages, data science, artificial intelligence, web development, and much more.
                         p What sets us apart is our hands-on approach to learning, where you'll get to work on real-world projects and gain practical experience. Our state-of-the-art facilities and advanced equipment create the ideal environment for honing your skills and unleashing your potential.
                         p As a student-centric academy, we understand that learning should be accessible to all. Therefore, we provide flexible learning options, including online courses and personalized study plans to cater to your individual needs.
-                        p Whether you are a seasoned professional seeking to enhance your skill set or a fresh graduate eager to kickstart your tech career, Career Builder's Academy is here to guide you every step of the way. 
+                        p Whether you are a seasoned professional seeking to enhance your skill set or a fresh graduate eager to kickstart your tech career, DeCareer Builder's Academy is here to guide you every step of the way. 
                 //-     .aboutimg
                 //-         img(src='img/about/image.png' alt='about').float-end.mt-5
 
-    .offer-area.pt-140.pb-100.mb-3
-        .container
-            .row
-                .col-md-6
-                    .our-offer
-                        h4 WHAT WE DELIVER
-
-                .col-md-6
-                    h3 WHAT WE DELIVER
-                    ul.bullet.mt-4
-                        li 
-                            | We support our clients in establishing and achieving their business goals.
-                        li 
-                            | Our team is comprised of highly experienced consultants and trainers.
-                        li 
-                            | Our consultants offer tech consultancy services to businesses and individuals
-
-                        li 
-                            | We offer our candidates industry standard tech trainings.
+    
+    .image-container-deliver
+      img(src='img/what-we-deliver.png', alt='what-we-deliver')
+      .overlay-text 
+        h1 WHAT WE DELIVER
+        ul(style="list-style-type: disc; align: center") 
+            li We support our clients in establishing and achieving their business goals.
+            li Our team is comprised of highly experienced consultants and trainers.
+            li Our consultants offer tech consultancy services to businesses & individuals
+            li We offer our candidates industry standard tech trainings.
 
     .testimonial-area.pt-90.pb-90.text-center
         .container
@@ -72,12 +51,13 @@ block content
                             | "Our mission is to equip aspiring tech professionals with the needed knowledge to succeed in their path to transitioning to high demand tech roles"
 
 
-    .about-area.pb-100.pt-120.bg-light
+    .about-area-altered.pb-20.pt-70.bg-light
         .container
-            .row
-                .col-md-7
-                    .about-content
-                        h3.mb-3 Positive and efficient Training environments. <br>We offer:
+          .about-altered
+                h3.mb-3(style="text-align: center; color: #2c2b5e") POSITIVE AND EFFICIENT TRAINING ENVIRONMENT
+                .about-text-area
+                    .we-offer
+                        p(style="padding-left: 10px") We offer:
                         ul.bullet 
                             li Training in an international, casual and friendly environment
                             li Collaboration with international clients across the world
@@ -86,8 +66,10 @@ block content
                             li Modern online training platform
                             li Well-structured and compelling schemes that translate into high exam scores
                             li Accredited training materials and many interactive online exercises
-                .col-md-5
-                    img(src='/img/about/win.avif')
+                
+                
+                    .about-picture-area
+                        img(src='img/about-text-area.png')
 
     .subscribe-area.pt-30.pb-70
         .container

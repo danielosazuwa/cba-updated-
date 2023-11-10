@@ -17,6 +17,42 @@ router.get('/about', (req, res) => {
     res.render('about', { title: 'About Us' });
 });
 
+
+router.get('/our-academy', (req, res) => {
+    res.render('our-academy');
+});
+
+router.get('/business-analysis', (req, res) => {
+    res.render('business-analysis');
+});
+
+router.get('/data-analysis', (req, res) => {
+    res.render('data-analysis');
+});
+
+router.get('/ui-ux-designer', (req, res) => {
+    res.render('ui-ux-designer');
+});
+
+router.get('/digital-marketing', (req, res) => {
+    res.render('digital-marketing');
+});
+
+router.get('/professional-product-owner', (req, res) => {
+    res.render('professional-product-owner');
+});
+
+router.get('/professional-scrum-master', (req, res) => {
+    res.render('professional-scrum-master');
+});
+
+router.get('/business-process-modeling', (req, res) => {
+    res.render('business-process-model');
+});
+
+router.get('/product-development', (req, res) => {
+    res.render('product-development');
+});
 router.get('/resources', (req, res) => {
     res.render('resources');
 });

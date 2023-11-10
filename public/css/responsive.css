@@ -170,6 +170,7 @@
     .content-wrapper.text-end>svg {display: none;}
     svg#searchi {display: inline-block;}
     svg#searchi {position:absolute; right: 70px; top: 95px;}
+    form.header-search{display: none;}
     .single-slide.item{height: 60%;}
     #slider-container{ height: 60%;}
     .slide-content h3, .choose-content h2 {font-size: 24px; line-height: 32px}
@@ -229,11 +230,11 @@
     .single-tag a:nth-child(3){margin-right: 10px}
     .single-tag a{margin-bottom: 10px}
     .search {top: 68px;}
-    .header-top-right::after, .header-top::before {display: none;}
-    .header-top::after {width: 14%; transform: skew(20deg); border-left: 5px solid white; position: absolute;
+    .header-top-right::after, .header-top::before {display: none; overflow-x: hidden;}
+    .header-top::after {width: 12%; transform: skew(20deg); border-left: 5px solid white; position: absolute;
     left: 84%;}
     .header-top-left p, .header-top-right ul li a {text-align: center; line-height: 24px; }
-    .header-top {padding: 10px 0}
+    .header-top {padding: 8px 0;}
     .header-top-right.text-right{text-align: center;}
     .slide-content {padding-left: 20px}
     .courses-area.two {padding-bottom: 80px}
@@ -280,6 +281,23 @@
 .formpt1{margin: 20px;}
 .formpt1 input{width: 60%;margin-top: 15px;}
 .formpt2 input{width: 71%;height: 50px;}
+.courses-grid{grid-template-columns: 1fr;}
+.single-course h2{padding: 20px;}
+.single-coming{width: 70%;margin-right: 30px;}
+.single-coming h2{font-size: 12px;}
+.bullet{margin-top: 20px;}
+a.mb-5.default-btn{margin-top: 20px;}
+.aboutimg img{width: 20%;}
+.image-container-deliver img{height: 300px;}
+.overlay-text{font-size: 11px;}
+.overlay-text h1{font-size: 18px;margin-bottom: 10px;}
+.overlay-text ul{line-height: 15px;}
+.overlay-text li{margin-top: 8px;}
+.about-text-area{flex-direction: column;}
+.about-altered h3{font-size: 20px;}
+.about-picture-area{width: 100%; margin-top: 10px;}
+.testimonial h3{font-size: 20px;}
+.testimonial p{font-size: 15px;}
 }
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -312,6 +330,5 @@
     .single-widget.instagram {padding-right: 70px}
     .single-slide.item{height: 60%;}
     #slider-container{height: 60%;}
-    
-    
 }
+
