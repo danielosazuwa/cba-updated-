@@ -299,6 +299,64 @@ a.mb-5.default-btn{margin-top: 20px;}
 .testimonial h3{font-size: 20px; }
 .testimonial p{font-size: 15px; margin-top: -20px;}
 .partner-img img{width: 70px;height: 40px;}
+.our-services-header{text-align: justify;}
+.our-services-grid{grid-template-columns: 1fr; grid-column-gap: 0px; grid-row-gap: 30px;}
+.cv-banner h1{font-size: 18px; color: #2c2b5e; margin: 20px 0px 10px 0px;}
+.cv-banner p{text-align: justify;}
+.cv-flex-area{flex-direction: column; margin: 20px 0px 20px 0px;}
+.cv-flex1{width: 100%;}
+.cv-flex1 img{width: 100%; height: 220px;}
+.cv-flex2{width: 100%; padding: 10px;}
+#popup-window {height: 400px;}        
+.consult-flex-area{grid-template-columns: 1fr; grid-row-gap: 10px; place-content: center;}
+.consult-flex1:nth-child(1){padding: 0px; text-align: justify;}
+#consult-pic1 img{width: 100%;}
+#consult-pic2{padding: 40px 20px 20px 20px;}
+#consult-pic3{display: none;}
+#phone-consult-pic3{display: block; padding: 40px 20px 20px 20px;}
+.consult-flex-area ul{padding: 20px;text-align: justify;}
+.consult-banner button{margin: 10px auto 40px auto;}
+.work-ex-flex-area{grid-template-columns: 1fr; grid-column-gap: 0px; grid-row-gap: 30px;}
+.work-ex-qst-area{
+    width: 90%;
+    padding: 15px;
+}
+.single-ex-qst-area h2{
+    background:#2c2b5e;
+    color: white;
+    padding: 10px 5px 5px 5px;
+    width: 100px;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 14px;
+}
+.single-ex-qst-area form{
+    padding: 10px;
+}
+.single-ex-qst-area select{
+    width: 200px;
+}
+.single-ex-qst-area p{
+    padding: 0px;
+    font-size: 13px;
+}
+.single-ex-qst-area span{
+    font-weight: bold;
+}
+.success-test-area img{
+    width: 50%;
+}
+#success-text{
+    top: 10%;
+}
+#circle-failed-area{
+    width: 50%;
+    height: 200px;
+}
+#failed-text{
+    top: 55%;
+}
+
 }
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {

@@ -53,6 +53,11 @@ router.get('/business-process-modeling', (req, res) => {
 router.get('/product-development', (req, res) => {
     res.render('product-development');
 });
+
+router.get('/services', (req, res) => {
+    res.render('our-services');
+});
+
 router.get('/resources', (req, res) => {
     res.render('resources');
 });
@@ -67,6 +72,14 @@ router.get('/partnership', (req, res) => {
 
 router.get('/consultancy', (req, res) => {
     res.render('consultancy');
+});
+
+router.get('/linkedin-optimization', (req, res) => {
+    res.render('linkedin-opt');
+});
+
+router.get('/cv-revamp', (req, res) => {
+    res.render('cv-rv');
 });
 
 router.get('/tech-training', (req, res) => {
@@ -85,8 +98,20 @@ router.get('/enroll', (req, res) => {
     res.render('tech-enroll');
 });
 
-router.get('/work-experience', (req, res) => {
+router.get('/work-experience-signup', (req, res) => {
     res.render('work-experience');
+});
+
+router.get('/work-experience', (req, res) => {
+    res.render('work-experience-a');
+});
+
+router.get('/success', (req, res) => {
+    res.render('success');
+});
+
+router.get('/failed', (req, res) => {
+    res.render('failed');
 });
 
 router.get('/contact', (req, res) => {

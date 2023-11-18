@@ -110,7 +110,7 @@ header.top
                                     li
                                         a(href='/our-academy') OUR ACADEMY
                                     li
-                                        a(href='#/services') OUR SERVICES
+                                        a(href='/services') OUR SERVICES
                                     li
                                         a(href='#/resources') RESOURCES
                                     li
@@ -199,7 +199,7 @@ footer.footer-area
                             li
                                 a(href='/about') About Us
                             li
-                                a(href='#') Our Services
+                                a(href='/services') Our Services
                             li
                                 a(href='#') Resources
                             li
@@ -254,7 +254,20 @@ script(src='js/jquery.nicescroll.min.js')
 script(src='js/plugins.js')
 script(src='js/main.js?v=1')
 script(src='https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/js/intlTelInput.min.js')
-
+script.
+      // Get the elements by their ID
+    var popupLink = document.getElementById("popup-link");
+    var popupWindow = document.getElementById("popup-window");
+    var closeButton = document.getElementById("close-button");
+      // Show the pop-up window when the link is clicked
+    popupLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    popupWindow.style.display = "block";
+    });
+      // Hide the pop-up window when the close button is clicked
+    closeButton.addEventListener("click", function() {
+    popupWindow.style.display = "none";
+    });
 script. 
     var input = document.querySelector("#phone");
     window.intlTelInput(input, {

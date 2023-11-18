@@ -7,16 +7,13 @@ block styleBlock
         }
 
 block content 
-    .banner-area-wrapper
-        .banner-area.text-center
-            .container
-                .row
-                    .col-12
-                        .banner-content-wrapper
-                            .banner-content
-                                h2 Partnership
+    img(src="img/services/partnership-header.png", alt="partnership")
+    .container-sm
+        #partnership-header
+            h1 PARTNERSHIPS 
+            p We are committed to advancing the tech industry by forging strategic partnerships with businesses, other tech academies and governments. Through these partnerships, we offer tailored training solutions that upskill workforces, students and people in general. Our collaborative approach ensures that industry-specific skills are honed, addressing the evolving demands of the tech sector. Let us join hands in shaping the future of tech through innovative partnerships.
 
-    .offer-area.pt-140.pb-80.mb-3
+    .offer-area.pt-80.pb-80.mb-3
         .container
             .row
                 .col-md-6 
@@ -29,7 +26,7 @@ block content
                         li Access to Practical Learning: We can provide hands-on training, workshops, and access to our cutting-edge labs, giving your students real-world experience in a simulated environment.
                         li Certification Programs: Our partnership can include certification opportunities for your students, enhancing their employability and standing out in a competitive job market.
 
-    .offer-area.pt-120.pb-80.mb-3.bg-light
+    .offer-area.pt-80.pb-80.mb-3.bg-light
         .container
             .row
                 .col-md-6 
@@ -43,7 +40,7 @@ block content
                         li Cybersecurity Solutions: Our expertise in cybersecurity can help safeguard sensitive government data and protect critical infrastructure from cyber threats.
 
 
-    .offer-area.pt-100.pb-100.mb-3
+    .offer-area.pt-80.pb-100.mb-3
         .container
             .row
                 .col-md-6 
@@ -63,4 +60,6 @@ block content
 
             .row 
                 .col 
-                    a.default-btn(href='/become-a-partner').mt-4 Become a Partner Today
+                    #partner-btn 
+                        button 
+                            a(href='/become-a-partner').mt-4 Become a Partner Today
