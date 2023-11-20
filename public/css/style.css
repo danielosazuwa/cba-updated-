@@ -4751,15 +4751,25 @@ a.mb-5.default-btn{
     width: 200px;
     height: 100px;
 }
-.our-services-header h1{
+.our-services-header  h1{
+    text-align: center;
     font-size: 20px;
-    font-weight: bold;
-    color: #2c2b5e
+    color: #2c2b5e;
+    margin: 30px 0px 10px 0px;
 }
-.our-services-header h1, .our-services-header h4{
+.our-services-header h4{
 text-align: center;
 margin-top: 10px;
 margin-bottom: 10px;
+color: black;
+}
+
+.our-services-header h4, .our-services-header p{
+    font-size: 15px;
+}
+
+.our-services-header p{
+    margin-top: 10px;
 }
 
 .our-services-grid{
@@ -4793,7 +4803,7 @@ p.link a{
     text-align: center;
     font-size: 20px;
     color: #2c2b5e;
-    margin: 20px 0px 20px 0px;
+    margin: 30px 0px 10px 0px;
 }
 
 .linkedin-banner h2{
@@ -4819,12 +4829,15 @@ p.link a{
     margin-bottom: 8px;
 }
 
-
+#linkedin-content{
+    font-size: 15px;
+    color: black;
+}
 .cv-banner h1{
     text-align: center;
     font-size: 20px;
     color: #2c2b5e;
-    margin: 30px 0px 30px 0px;
+    margin: 30px 0px 10px 0px;
 }
 .cv-flex-area{
     display: flex;
@@ -4871,12 +4884,11 @@ p.link a{
     display: none;
 }        
 
-#partnership-header h1{
+#partnership-header  h1{
     text-align: center;
     font-size: 20px;
     color: #2c2b5e;
-    font-weight: bold;
-    margin: 10px 0px 10px 0px;
+    margin: 30px 0px 10px 0px;
 }
 
 #partnership-header p{
