@@ -357,6 +357,71 @@ a.mb-5.default-btn{margin-top: 20px;}
     top: 55%;
 }
 
+#enrol-now-header img{
+    width: 100%;
+}
+#enrol-now-farea h4{
+    margin-top: 10px;
+}
+
+#enrol-now-farea #popup-window {
+    margin-top: 90px;
+    width: 100%;
+    border-radius: 5px;
+    height: 65vh;
+    overflow:auto;
+}
+#enrol-single{
+    grid-template-columns: 1fr;
+}
+#enrol-single h2{
+    font-size: 12px;
+    width: 40%;
+}
+#enrol-single p{
+    font-size: 12px;
+    width: 100%;
+}
+#enrol-now-farea button{
+    border-radius: 4px;
+    padding: 3px;
+}
+
+.payment-area{
+    margin-top: 20px;
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+}
+.payment-single img{
+    width: 100px;
+}
+.payment-main-area{
+    width: 90%;
+}
+.payment-main-single{
+    margin-top: 30px;
+    grid-template-columns: 3fr 6fr;
+}
+
+.payment-total-area{
+    grid-template-columns: 5fr 3fr;
+}
+.payment-total-area p{
+    color: white;
+    font-weight: bold;
+}
+
+#payment-area-btn button{
+    background: red;
+    padding: 5px 10px 5px 10px;
+    display: block;
+    margin: 2px auto 40px auto; 
+    border-radius: 5px;
+}
+
+#payment-area-btn button a{
+    color: white;
+}
 }
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {

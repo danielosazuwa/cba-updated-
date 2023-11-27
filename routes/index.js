@@ -94,7 +94,7 @@ router.get('/book-consultation', (req, res) => {
     res.render('consultancy-form');
 });
 
-router.get('/enroll', (req, res) => {
+router.get('/enrol', (req, res) => {
     res.render('tech-enroll');
 });
 
@@ -112,6 +112,18 @@ router.get('/success', (req, res) => {
 
 router.get('/failed', (req, res) => {
     res.render('failed');
+});
+
+router.get('/payment-page', (req, res) => {
+    res.render('payment-page');
+});
+
+router.get('/payment-success', (req, res) => {
+    res.render('payment-success');
+});
+
+router.get('/payment-decline', (req, res) => {
+    res.render('payment-decline');
 });
 
 router.get('/contact', (req, res) => {
