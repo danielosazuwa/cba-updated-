@@ -37,6 +37,11 @@
 /*  1. Default CSS
 /*----------------------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+@import url("https://fonts.googleapis.com/css2?family=Inika&family=Inter&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inika&family=Inter&family=Open+Sans&display=swap");
+
+
+
 
 body {
     color: #606060;
@@ -44,8 +49,11 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    font-family: 'Open Sans', sans-serif;
+  
+
 }
+p{font-family: Inter;}
+h1, h2, h3, h4, h5, h6{font-family: "Inika", serif;}
 
 .clear {
     clear: both
@@ -59,12 +67,17 @@ body {
     display: block
 }
 
+
 img {
     max-width: 100%;
     -webkit-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
     height: auto;
 }
+
+.logo img{
+    height: 9.7vh;
+    }
 
 h1,
 h2,
@@ -216,7 +229,7 @@ ul {
     position: relative;
     text-transform: uppercase;
     z-index: 9;
-    background: #EC1C23;
+    background: #1E8478;
 }
 
 .default-btn:hover {
@@ -1469,7 +1482,7 @@ textarea {
 }
 
 .logo {
-    padding: 60px 0 23px;
+    padding: 40px 0 23px;
     /*    width: 60%;*/
     -webkit-transition: all 0.5s ease 0s;
     -o-transition: all 0.5s ease 0s;
@@ -1546,6 +1559,7 @@ svg#searchi {display: none;}
 }
 
 .content-wrapper {
+    
     text-align: right;
 }
 
@@ -1751,7 +1765,7 @@ svg#searchi {display: none;}
 }
 
 .sticky .logo {
-    padding: 12px 0 8px;
+    padding: 5px 0 8px;
 }
 
 .header-area .sticky {
@@ -1986,12 +2000,13 @@ svg#searchi {display: none;}
 }
 
 .header-top {
-    background: #EC1C23;
+    background: #1E8478;
+    
     position: relative;
 }
 
 .header-top:after {
-    background: #2C2B5E;
+    background: #1E8478;
     position: absolute;
     right: 0;
     top: 0;
@@ -2017,7 +2032,7 @@ svg#searchi {display: none;}
 }
 
 .header-top-right::after {
-    background: #2c2b5e none repeat scroll 0 0;
+    background: #1E8478 none repeat scroll 0 0;
     content: "";
     height: 100px;
     left: -16%;
@@ -3918,7 +3933,7 @@ svg#searchi {display: none;}
 }
 
 .footer-bottom {
-    background: #2C2B5E;
+    background: #1A2930;
     text-align: center;
 }
 
@@ -4059,7 +4074,7 @@ svg#searchi {display: none;}
 }
 
 .about-content h2 span {
-    color: #ec1c23;
+    color: #000;
 }
 
 .about-content p {
