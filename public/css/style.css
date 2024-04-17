@@ -76,7 +76,8 @@ img {
 }
 
 .logo img{
-    height: 9.7vh;
+    min-width: 80%;
+    height: 11vh;
     }
 
 h1,
@@ -219,9 +220,8 @@ ul {
 }
 
 .default-btn {
-    color: #fff;
+    color: #1A2930;
     display: inline-block;
-    font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 700;
     overflow: hidden;
@@ -229,12 +229,12 @@ ul {
     position: relative;
     text-transform: uppercase;
     z-index: 9;
-    background: #1E8478;
+    background: #F7C838;
 }
 
 .default-btn:hover {
-    color: #EC1C23;
-    background: #fff
+    color: #ec1c23;
+    background: #fff;
 }
 
 .banner-btn span {
@@ -2000,19 +2000,19 @@ svg#searchi {display: none;}
 }
 
 .header-top {
-    background: #1E8478;
+    background: #1A2930;
     
     position: relative;
 }
 
 .header-top:after {
-    background: #1E8478;
+    background: #F7C838;
     position: absolute;
     right: 0;
     top: 0;
     content: "";
     height: 100%;
-    width: 36%;
+    width: 35%;
 }
 
 .header-top::before {
@@ -2023,7 +2023,7 @@ svg#searchi {display: none;}
     right: 37.8%;
     top: -18px;
     transform: rotate(-45deg);
-    width: 8px;
+    width: 10px;
     z-index: 1;
 }
 
@@ -2032,7 +2032,7 @@ svg#searchi {display: none;}
 }
 
 .header-top-right::after {
-    background: #1E8478 none repeat scroll 0 0;
+    background: #F7C838 none repeat scroll 0 0;
     content: "";
     height: 100px;
     left: -16%;
@@ -2279,8 +2279,8 @@ svg#searchi {display: none;}
 }
 
 .owl-nav div {
-    background: rgba(236, 28, 35, 0.64);
-    color: #ddd;
+    background: #F7C838;
+    color: #1A2930;
     font-size: 18px;
     border-radius: 3px;
     height: 40px;
@@ -2818,7 +2818,7 @@ svg#searchi {display: none;}
 /*  7. Event CSS
 /*----------------------------------------*/
 .single-event {
-    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);*/
 }
 
 .event-date {
@@ -2858,7 +2858,8 @@ svg#searchi {display: none;}
 }
 
 .event-content-left {
-    float: left
+    float: left;
+
 }
 
 .event-content-left h4 {

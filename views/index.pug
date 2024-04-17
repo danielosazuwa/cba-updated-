@@ -3,16 +3,25 @@ extend layout
 block styleBlock 
     style.  
         .trending-courses {
-            background: #2C2B5E
+            //- background: #2C2B5E
         }
 
         .trending-courses .event-content {
             padding: 25px;
-            background: #fff
+            background: #F7C838;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            border: 2px dotted #000;
+            border-bottom: none;
+            height: 85px;
         }
 
         .event-footer {
-            border-top: 1px solid #ccc; background: #fff; padding: 12px 25px; font-weight: bold; font-size: 16px
+            //- border-top: 1px solid #ccc; background: none; padding: 12px 25px; font-weight: bold; font-size: 16px
+            background: #fff;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            border: 1px solid #000;
         }
 
         .about-content p { font-size: 16px }
@@ -103,7 +112,7 @@ block content
                             | Your future in tech starts here!
                 .col-md-6   
                     .aboutimg
-                        img(src='img/home-page-banner.png' alt='about' style="width: 93%; height: 270px").float-end.mt-2
+                        img(src='img/homepage_office.jpg' alt='about' style="width: 93%; height: 270px").float-end.mt-2
 
 
     // Courses Area Start
@@ -112,7 +121,6 @@ block content
             .row
                 .col-12
                     .section-title
-                        img(src='img/icon/section.png' alt='section-title')
                         h2 What we Offer
             .row
                 .col-lg-3.col-md-6
@@ -165,11 +173,11 @@ block content
                             //- p Our partnership offers opportunities for co-branding, joint marketing campaigns...
                             a.default-btn(href='/work-experience') read more
 
-    .trending-courses(style="background: #1E8478").pb-100.pt-80
+    .trending-courses(style="background: #fff").pb-100.pt-80
         .container
             .row
                 .col-12.partners
-                    h3.text-center.text-white.mb-5 TRENDING COURSES
+                    h3.text-center.text-black.mb-5 TRENDING COURSES
             .row 
                 .col-md-4.col-xs-12
                     .single-event.mb-35
