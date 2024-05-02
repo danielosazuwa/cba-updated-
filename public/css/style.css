@@ -3199,6 +3199,7 @@ svg#searchi {display: none;}
 
 .course-grid {
     display: grid;
+    place-items: center;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
     text-align: center;
