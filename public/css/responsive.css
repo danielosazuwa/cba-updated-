@@ -737,28 +737,24 @@
   .search {
     top: 68px;
   }
-  .header-top-right::after,
-  .header-top::before {
-    display: none;
-    overflow-x: hidden;
+  .slant-header {
+    height: 50px;
   }
-  .header-top::after {
-    width: 12%;
-    transform: skew(20deg);
-    border-left: 5px solid white;
-    position: absolute;
-    left: 84%;
+  .unslant-header {
+    height: 50px;
   }
-  .header-top-left p,
-  .header-top-right ul li a {
-    text-align: center;
-    line-height: 24px;
+  .slant-header p {
+    color: #fff;
+    padding: 10px 0px 10px 20px;
+    font-size: 10px;
   }
+
   .header-top {
     padding: 8px 0;
   }
-  .header-top-right.text-right {
-    text-align: center;
+  .logo img {
+    width: 120px;
+    height: 5.5vh;
   }
   .slide-content {
     padding-left: 20px;
@@ -939,7 +935,7 @@
     margin-top: 20px;
   }
   .aboutimg img {
-    width: 20%;
+    height: 200px;
   }
   .image-container-deliver img {
     height: 300px;
@@ -967,6 +963,17 @@
     width: 100%;
     margin-top: 10px;
   }
+
+  /*TRENDING COURSES*/
+  .trending {
+    margin: 40px 0 40px 0;
+  }
+
+  .course-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+
   .testimonial h3 {
     font-size: 20px;
   }

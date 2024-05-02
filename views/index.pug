@@ -2,6 +2,7 @@ extend layout
 
 block styleBlock 
     style.  
+        
         .trending-courses {
             //- background: #2C2B5E
         }
@@ -14,6 +15,8 @@ block styleBlock
             border: 2px dotted #000;
             border-bottom: none;
             height: 85px;
+            
+
         }
 
         .event-footer {
@@ -112,7 +115,7 @@ block content
                             | Your future in tech starts here!
                 .col-md-6   
                     .aboutimg
-                        img(src='img/homepage_office.jpg' alt='about' style="width: 93%; height: 270px").float-end.mt-2
+                        img(src='img/homepage_office.jpg' alt='about').float-end.mt-2
 
 
     // Courses Area Start
@@ -132,10 +135,10 @@ block content
                                     i.fa.fa-link
                         .course-content
                             h3
-                                a(href='/tech-training') Our Academy
+                                a(href='/our-academy') Courses
                             //- p At DeCareer Builders’ Academy, our mission is to empower individuals and businesses...
 
-                            a.default-btn(href='/tech-training') read more
+                            a.default-btn(href='/our-academy') read more
                 .col-lg-3.col-md-6
                     .single-course
                         .course-img
@@ -173,72 +176,38 @@ block content
                             //- p Our partnership offers opportunities for co-branding, joint marketing campaigns...
                             a.default-btn(href='/work-experience') read more
 
-    .trending-courses(style="background: #fff").pb-100.pt-80
-        .container
-            .row
-                .col-12.partners
-                    h3.text-center.text-black.mb-5 TRENDING COURSES
-            .row 
-                .col-md-4.col-xs-12
-                    .single-event.mb-35
-                        .event-content.text-start
-                            h4 Professional Product Owner
-                            //- p The Product Owner is the voice of the customer within Agile teams, responsible for defining and prioritizing features....
+    .trending 
+        .trending-courses-grid 
+            h1 TRENDING COURSES 
 
-                        .event-footer   
-                            p(style="text-align:right") 
-                                a(href="/professional-product-owner") Check Course
-                         
+            .course-grid
+                .course-boxes 
+                    .course-title 
+                        p Professional Product Owner 
+                    
+                    .course-event-footer 
+                        a(href='/professional-product-owner') Check course
 
-                .col-md-4.col-xs-12
-                    .single-event.mb-35
-                        .event-content.text-start
-                            h4 Professional Scrum Master
-                            //- p The Scrum Master is the coach, facilitator, and organiser of an agile team; responsible for motivating the team, removing.....
-                        .event-footer 
-                            p(style="text-align:right") 
-                                a(href="/professional-scrum-master") Check Course
+                .course-boxes 
+                    .course-title
+                        p Professional Scrum Master 
+                    
+                    .course-event-footer 
+                        a(href='/professional-scrum-master') Check course
 
-                .col-md-4.col-xs-12
-                    .single-event.mb-35
-                        .event-content.text-start
-                            h4 UI/UX Design
-                            //- p The UI/UX Designer is responsible for creating digital products and interfaces that are intuitive and user-friendly. This course will....
-                        .event-footer 
-                            p(style="text-align:right") 
-                                a(href="/ui-ux-design") Check Course
+                .course-boxes 
+                    .course-title 
+                        p Business Analysis 
+                    
+                    .course-event-footer 
+                        a(href='/business-analysis') Check course
 
-            .row.mt-4 
-                .col-md-4.col-xs-12
-                    .single-event.mb-35
-                        .event-content.text-start
-                            h4 Business Analysis
-                            //- p The Business Analyst functions as a link between the Product Owner and Developers in Agile teams, ensuring that products are.....
-                        .event-footer 
-                            p(style="text-align:right") 
-                                a(href="/business-analysis") Check Course
-
-                .col-md-4.col-xs-12
-                    .single-event.mb-35
-                        .event-content.text-start
-                            h4 Product Development
-                            //- p(class="mb-4") This course will focus on implementing a product life cycle from design to .......
-                             
-                            
-                        .event-footer 
-                            p(style="text-align:right") 
-                                a(href="/product-development") Check Course
-
-                .col-md-4.col-xs-12
-                    .single-event.mb-35
-                        .event-content.text-start
-                            h4 Business Process Architecture
-                            //- p Learn practical skills in modelling, analysing and optimising business processes using industry-standard notations...
-                        .event-footer 
-                            p(style="text-align:right") 
-                                a(href="#") Check Course
-
-
+                .course-boxes 
+                    .course-title 
+                        p Product Development 
+                    
+                    .course-event-footer 
+                        a(href='/product-development') Check course
 
     // Subscribe Start
     .subscribe-area.pt-50.pb-70
@@ -260,7 +229,7 @@ block content
 
                             br/ 
                             br/
-                            a(class="mb-5" href="/work-experience").default-btn Enrol Now
+                            a(class="mb-5" href="/our-academy").default-btn Learn More
                         .col-md-6
                             div
                                 #carouselExampleControls.carousel.slide(data-ride='carousel', style=" text-align:center; background: #D9D9D9; border: 2px solid #16255C; border-radius: 10px;")
@@ -289,3 +258,14 @@ block content
                                     a.carousel-control-next(, href='#carouselExampleControls', role='button', data-bs-slide='next')
                                             span.carousel-control-next-icon(aria-hidden='true')
                                             span.sr-only Next    
+    
+    //- .dropdown
+    //-     button.btn.btn-secondary.dropdown-toggle(type='button', data-bs-toggle='dropdown', aria-expanded='false') 
+    //-         | COURSES
+    //-     ul.dropdown-menu
+    //-         li
+    //-             a.dropdown-item(href='#') Business Analysis
+    //-         li
+    //-             a.dropdown-item(href='#') Another action
+    //-         li
+    //-             a.dropdown-item(href='#') Something else here

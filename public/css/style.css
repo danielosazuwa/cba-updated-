@@ -76,8 +76,8 @@ img {
 }
 
 .logo img{
-    min-width: 80%;
-    height: 11vh;
+    width: 220px;
+    height: 12vh;
     }
 
 h1,
@@ -1494,7 +1494,7 @@ textarea {
 }
 
 .header-area.two.sticky .logo {
-    padding: 30px 10px 10px;
+    padding: 5px 10px 10px;
     width: 60%;
     -webkit-transition: all 0.6s ease 0s;
     -o-transition: all 0.6s ease 0s;
@@ -1511,7 +1511,7 @@ textarea {
 svg#searchi {display: none;}
 
 .header-area.two.sticky .main-menu>nav>ul>li>a {
-    line-height: 58px;
+    line-height: 70px;
     -webkit-transition: all 0.6s ease 0s;
     -o-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
@@ -1999,47 +1999,40 @@ svg#searchi {display: none;}
     z-index: 2;
 }
 
-.header-top {
+.slant-section{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slant-header{
     background: #1A2930;
-    
+    width: 90%;
+    height: 70px;
     position: relative;
+    clip-path: polygon(0% 0%, 96% 0%, 100% 100%, 0% 100%);
 }
 
-.header-top:after {
-    background: #F7C838;
-    position: absolute;
-    right: 0;
-    top: 0;
-    content: "";
-    height: 100%;
-    width: 35%;
+.unslant-header{
+    background:#F7C838;
+    width: 50%;
+    height: 70px;
+    position: relative;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 7% 100%);
 }
-
-.header-top::before {
-    background: #fff none repeat scroll 0 0;
-    content: "";
-    height: 105px;
-    position: absolute;
-    right: 37.8%;
-    top: -18px;
-    transform: rotate(-45deg);
-    width: 10px;
-    z-index: 1;
+.slant-header p{
+    color: #fff;
+    padding: 20px 0px 20px 40px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
 }
-
-.header-top-right {
-    position: relative
-}
-
-.header-top-right::after {
-    background: #F7C838 none repeat scroll 0 0;
-    content: "";
-    height: 100px;
-    left: -16%;
-    position: absolute;
-    top: -38px;
-    transform: rotate(-45deg);
-    width: 60px;
+.header-top {
+     /* background: #1A2930; */
+    /* width: 100%;
+    position: relative;
+    clip-path: polygon(0% 0%, 40% 0%, 50% 100%, 0% 100%);  */
 }
 
 .header-top-right ul li {
@@ -2852,6 +2845,7 @@ svg#searchi {display: none;}
     display: block;
 }
 
+
 .event-content {
     overflow: hidden;
     padding: 18px 0 20px
@@ -3188,6 +3182,59 @@ svg#searchi {display: none;}
     padding-right: 65px;
 }
 
+/*TRENDING COURSES*/
+.trending{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    margin: 20px 0 40px 0;
+}
+
+.trending-courses-grid>h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+.course-boxes{
+    text-align:center;
+    width: 330px;
+}
+
+.course-title{
+    padding: 20px;
+    background: #1A2930;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border: 2px dotted #1A2930;
+    border-bottom: none;
+}
+
+.course-title p{
+    color: #fff;
+    font-size: 20px;
+}
+.course-event-footer{
+    background: #fff;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border: 1px solid #1A2930;
+    padding: 10px 20px 10px 20px;
+    text-align: right;
+}
+.course-event-footer a {
+    /* font-size: 20px;    */
+    color: #000;
+}
 /*----------------------------------------*/
 /*  8. Testimonial CSS
 /*----------------------------------------*/
@@ -3207,7 +3254,7 @@ svg#searchi {display: none;}
     width: 100%;
     height: 100%;
     content: "";
-    background: rgba(44, 43, 94, 0.9);
+    background: rgba(26, 41, 48, 0.9);
 }
 
 .testimonial-area.three {
@@ -3822,7 +3869,7 @@ svg#searchi {display: none;}
 }
 
 #scrollUp {
-    background: #EC1C23 none repeat scroll 0 0;
+    background: #F7C838 none repeat scroll 0 0;
 }
 
 /*----------------------------------------*/
@@ -3832,7 +3879,10 @@ svg#searchi {display: none;}
     padding-bottom: 104px;
     padding-top: 117px;
 }
-
+.main-footer img{
+    width: 100%;
+    height: 100px;
+}
 .footer-area.three .main-footer {
     padding-bottom: 50px;
 }
@@ -4080,7 +4130,7 @@ svg#searchi {display: none;}
 
 .about-content p {
     font-size: 14px;
-    color: #606060;
+    color: #000;
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 10px;
 }
@@ -4637,7 +4687,7 @@ button.next{
 
 form.header-search{
     position:absolute; 
-    left: 70%;
+    left: 20%;
     top: 40%; 
     z-index: 1;
     background: white;
@@ -4674,7 +4724,7 @@ p.academy-text{
 }
 
 .singleCourse h2{
-    background: #2c2b5e;
+    background: #1A2930;
     color: white;
     font-size: 18px;
     padding: 10px;
@@ -4700,7 +4750,7 @@ p.academy-text{
 }
 
 .single-coming h2{
-    background: #2c2b5e;
+    background: #1A2930;
     color: white;
     font-size: 18px;
     padding: 10px;
@@ -5220,7 +5270,7 @@ p{
     grid-template-columns: 1fr 4fr;
 }
 #enrol-single h2{
-    background: #2c2b5e;
+    background: #1A2930;
     color: white;
     padding: 4px;
     padding-left: 7px;
@@ -5231,16 +5281,18 @@ p{
 }
 
 #enrol-now-farea button{
-    background: red;
-    color: white;
+    background: #1A2930;
+    color: #fff;
     font-size: 15px;
     border-radius: 4px;
+    font-weight: bold;
     padding: 5px;
     display: block;
     margin: 2px auto 0px auto;
+    border: none;
 }
 #enrol-now-farea button a{
-    color: white;
+    color: #fff;
 }
 
 .pay-main-div{
@@ -5297,4 +5349,10 @@ p{
 
 #payment-area-btn button a{
     color: white;
+}
+
+/*About Image*/
+.aboutimg img{
+    width: 93%; 
+    height: 250px;
 }
