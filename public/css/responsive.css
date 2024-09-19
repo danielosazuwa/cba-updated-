@@ -489,10 +489,13 @@
     top: 38px;
   }
   .logo {
-    padding: 35px 0 0px;
+    height: 4rem;
+    margin-bottom: 20px;
+    /* padding: 35px 0 0px; */
   }
   .logo img {
-    height: 4.7vh;
+    /* background: red; */
+    height: 3rem;
   }
   .content-wrapper.text-end > svg {
     display: none;
@@ -752,10 +755,15 @@
   .header-top {
     padding: 8px 0;
   }
-  .logo img {
+  /* .logo img {
     width: 120px;
     height: 5.5vh;
-  }
+  } */
+  /* .logo {
+    background: red;
+    width: 120px;
+    height: 5.5vh;
+  } */
   .slide-content {
     padding-left: 20px;
   }
@@ -1179,9 +1187,13 @@
   .event-area.three .event-content h4 a {
     font-size: 17px;
   }
+  .header-area.two.header-sticky {
+    margin-top: -10px;
+  }
   .header-area.two .logo {
     padding: 25px 0 21px;
   }
+
   .search-btn {
     top: 32px;
   }
@@ -1189,7 +1201,10 @@
     top: 64px;
   }
   .header-area.two .mean-container a.meanmenu-reveal {
-    margin-top: -63px;
+    margin-top: -53.5px;
+  }
+  .header-sticky.sticky.two {
+    height: 4rem;
   }
   .one.mobile-menu a.meanmenu-reveal {
     margin-top: -65px;
@@ -1204,7 +1219,7 @@
     margin-top: -50px;
   }
   .header-area.two.sticky .mean-container a.meanmenu-reveal {
-    margin-top: -48px;
+    margin-top: -70px;
   }
   .header-area.two.sticky .search {
     top: 48px;
@@ -1253,5 +1268,60 @@
   }
   #slider-container {
     height: 60%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .unslant-header form {
+    margin-left: -35px;
+  }
+}
+
+@media (max-width: 993px) {
+  .header-area.two .main-menu nav > ul {
+    margin-top: 10px;
+  }
+  .header-area.two .main-menu nav > ul > li > a:nth-child(1) {
+    width: 80px;
+    margin-left: -5px;
+  }
+}
+@media (max-width: 860px) {
+  form.header-search > input {
+    width: 85%;
+  }
+  .unslant-header form {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 854px) {
+  .header-area.two .main-menu nav > ul {
+    margin-left: -20px;
+  }
+}
+
+@media (max-width: 811px) {
+  .header-area.two .main-menu nav > ul {
+    margin-left: -40px;
+  }
+}
+
+@media (max-width: 811px) {
+  .header-area.two .main-menu nav > ul {
+    margin-left: -40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 2rem;
+  }
+  .header-area.two .mean-container a.meanmenu-reveal {
+    margin-top: -45px;
+  }
+  .header-area.two .logo {
+    /* background: grey; */
+    margin-top: -5px;
   }
 }
