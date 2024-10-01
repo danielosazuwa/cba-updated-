@@ -1,52 +1,23 @@
 extend layout
 
 block styleBlock 
-    style.  
-        
-        .trending-courses {
-            //- background: #2C2B5E
-        }
-
-        .trending-courses .event-content {
-            padding: 25px;
-            background: #F7C838;
-            border-top-left-radius: 40px;
-            border-top-right-radius: 40px;
-            border: 2px dotted #000;
-            border-bottom: none;
-            height: 85px;
-            
-
-        }
-
-        .event-footer {
-            //- border-top: 1px solid #ccc; background: none; padding: 12px 25px; font-weight: bold; font-size: 16px
-            background: #fff;
-            border-bottom-left-radius: 40px;
-            border-bottom-right-radius: 40px;
-            border: 1px solid #000;
-        }
-
-        .about-content p { font-size: 16px }
-
-        .event-content h4 { color: #303030 }
-
-        .trending-courses h3 { font-size: 30px }
-
-        .trending-courses h4 { font-size: 20px }
-
-        .bullet li { font-size: 18px }
-
-        .testimonial { border: 2px solid #16255C; border-radius: 10px; background: #D9D9D9; padding: 10px 15px }
-
-        .testimonial h3 { color: #2c2b5e; font-size: 19px }
-
-        .testimonial .inner { background: #fff; border-radius: 8px; padding: 9px }
 
 
 block content 
     section#slider-container.slider-area.three
         .slider-owl.owl-theme.owl-carousel
+
+            .single-slide.item(style='background-image: url(img/unlock_potentials.png)' alt="unlock your potentials")
+                .slider-content-area
+                    .container
+                        .row
+                            .col-lg-7.col-md-offset-left-5
+                                .slide-content-wrapper
+                                    .slide-content(style="")
+                                        .special-p 
+                                            p At DeCareer Builders' Academy, we empower tech enthusiasts with cutting-edge skills for today’s dynamic industry. As a leading tech training academy, we provide top-tier education based on global standards, shaping the future of tech talent. Your success starts here!
+                                        h3.special-h3 Unlock Your Tech Potential Today With Us!
+                                        a.default-btn(href='/our-academy').special-btn Learn more
 
             .single-slide.item(style='background-image: url(img/tech.jpeg)')
                 .slider-content-area
@@ -55,7 +26,7 @@ block content
                             .col-lg-7.col-md-offset-left-5
                                 .slide-content-wrapper
                                     .slide-content
-                                        h2 OUR ACADEMY 
+                                        h3 OUR ACADEMY 
                                         p
                                             | BUILDING TECH LEADERS ONE STUDENT AT A TIME
                                         a.default-btn(href='/tech-training') Learn more
@@ -67,7 +38,7 @@ block content
                             .col-lg-7.col-md-offset-left-5
                                 .slide-content-wrapper.text-start
                                     .slide-content
-                                        h2 WORK EXPERIENCE 
+                                        h3 WORK EXPERIENCE 
                                         p
                                             | TRAINING IS OVER... WHAT IS NEXT ??~
                                         a.default-btn(href='/work-experience-signup') Learn more
@@ -79,7 +50,7 @@ block content
                             .col-lg-7.col-md-offset-left-5
                                 .slide-content-wrapper.text-start
                                     .slide-content
-                                        h2 PARTNERSHIP 
+                                        h3 PARTNERSHIP 
                                         p
                                             | STRATEGIC PARTNERSHIPS TO FOSTER INNOVATION
                                         a.default-btn(href='/partnership') Learn more
@@ -91,181 +62,105 @@ block content
                             .col-lg-7.col-md-offset-left-5
                                 .slide-content-wrapper.text-start
                                     .slide-content
-                                        h2 CONSULTING
+                                        h3 CONSULTING
                                         p CONSULTING FOR TOMORROW
                                         a.default-btn(href='/consultancy') Learn more
 
+    //Product Area
+    .product-mockup
+        h4 What we offer
 
-    // About Start
-    .about-area.pb-135.pt-30.bg-light
-        .container
-            .row
-                .col-md-12.text-center 
-                    .about-content
-                        h2.mt-5.mb-4 Welcome to 
-                            span DeCareer Builders' Academy
-                .col-md-6
-                    .about-content.mt-4
-                        p Your gateway to success in the ever-evolving tech world. At DeCareer Builders' Academy, our vision is to empower aspiring tech 
-                            | enthusiasts and professionals with the knowledge and skills they need to thrive in the tech industry.  
+        .product-collection
+            .product-mockup-content
+                #singleproduct  
+                    img(src="img/products/booknpen.jpg", alt="courses")
+                    p Courses
+                    a(href="/courses")
+                        button#product_learn Learn more
 
-                        p We are a leading tech training academy, deeply committed to delivering top-notch education and fostering professional 
-                            | development. We take pride in offering high-quality, professional training that adheres to globally recognized methodologies.
-                            | Our commitment to maintaining the highest educational standards has earned us the trust of numerous enterprises worldwide. 
-                            | Your future in tech starts here!
-                .col-md-6   
-                    .aboutimg
-                        img(src='img/homepage_office.jpg' alt='about').float-end.mt-2
+            .product-mockup-content.border-lr
+                #singleproduct  
+                    img(src="img/products/briefcase.jpg", alt="Work Experience")
+                    p Work Experience
+                    a(href="/work-experience")
+                        button#product_learn Learn more
 
+            .product-mockup-content.border-r
+                #singleproduct
+                    img(src="img/products/consultant.jpg", alt="consultancy")
+                    p Consultancy
+                    a(href="/consultancy")
+                        button#product_learn Learn more        
 
-    // Courses Area Start
-    .courses-area.pt-100.pb-100.text-center.mb-3(style="margin-top: -30px")
-        .container
-            .row
-                .col-12
-                    .section-title
-                        h2 What we Offer
-            .row
-                .col-lg-3.col-md-6
-                    .single-course
-                        .course-img
-                            a(href='/tech-training')
-                                img(src='img/products/p1.png' alt='course')
-                                .course-hover
-                                    i.fa.fa-link
-                        .course-content
-                            h3
-                                a(href='/our-academy') Courses
-                            //- p At DeCareer Builders’ Academy, our mission is to empower individuals and businesses...
+            .product-mockup-content
+                #singleproduct  
+                    img(src="img/products/partnership.jpg", alt="Partnerships")
+                    p Partnerships
+                    a(href="/partnership")
+                        button#product_learn Learn more
 
-                            a.default-btn(href='/our-academy') read more
-                .col-lg-3.col-md-6
-                    .single-course
-                        .course-img
-                            a(href='/consultancy')
-                                img(src='img/products/p2.png' alt='course')
-                                .course-hover
-                                    i.fa.fa-link
-                        .course-content
-                            h3
-                                a(href='/consultancy') Consultancy
-                            //- p We bridge the gap between technology and businesses, enabling our clients to... 
-                            a.default-btn(href='/consultancy') read more
-                .col-lg-3.col-md-6
-                    .single-course.mb-0
-                        .course-img
-                            a(href='/partnership')
-                                img(src='img/products/p3.png' alt='course')
-                                .course-hover
-                                    i.fa.fa-link
-                        .course-content
-                            h3
-                                a(href='/partnership') Partnership
-                            //- p Our partnership offers opportunities for co-branding, joint marketing campaigns...
-                            a.default-btn(href='/partnership') read more
-                .col-lg-3.col-md-6
-                    .single-course.mb-0
-                        .course-img
-                            a(href='/work-experience')
-                                img(src='img/products/p4.png' alt='course')
-                                .course-hover
-                                    i.fa.fa-link
-                        .course-content
-                            h3
-                                a(href='/work-experience') Work Experience
-                            //- p Our partnership offers opportunities for co-branding, joint marketing campaigns...
-                            a.default-btn(href='/work-experience') read more
-
-    .trending 
-        .trending-courses-grid 
-            h1 TRENDING COURSES 
-
-            .course-grid
-                .course-boxes 
-                    .course-title 
-                        p Professional Product Owner 
-                    
-                    .course-event-footer 
-                        a(href='/professional-product-owner') Check course
-
-                .course-boxes 
-                    .course-title
-                        p Professional Scrum Master 
-                    
-                    .course-event-footer 
-                        a(href='/professional-scrum-master') Check course
-
-                .course-boxes 
-                    .course-title 
-                        p Business Analysis 
-                    
-                    .course-event-footer 
-                        a(href='/business-analysis') Check course
-
-                .course-boxes 
-                    .course-title 
-                        p Product Development 
-                    
-                    .course-event-footer 
-                        a(href='/product-development') Check course
-
-    // Subscribe Start
-    .subscribe-area.pt-50.pb-70
-        .container
-            .row
-                .col-lg-8.offset-lg-2
-                    .subscribe-content.section-title.text-center
-                        h2.m-4 WHY TRAIN WITH US?
-
-                    .row 
-                        .col-md-6 
-                            ul.bullet  
-                                li Immersive Learning Experience
-                                li Cutting-Edge Training
-                                li Global Alumni Network
-                                li Real Life Projects
-                                li Career Support Services
-                                li Job Ready Skills
-
-                            br/ 
-                            br/
-                            a(class="mb-5" href="/our-academy").default-btn Learn More
-                        .col-md-6
-                            div
-                                #carouselExampleControls.carousel.slide(data-ride='carousel', style=" text-align:center; background: #D9D9D9; border: 2px solid #16255C; border-radius: 10px;")
-                                    .carousel-inner
-                                        .carousel-item.active(style="background: #D9D9D9")
-                                            h1(style="color:#2c2b5e; margin: 10px 10px; font-size: 18px") TESTIMONIALS   
-                                            img(src="/img/rating.png", alt="", width="120px" style="margin= 10px 20px")
-                                            div(style="display:flex; justify-content:center")
-                                                img.d-block.w-20(src='/img/image18.png', alt='First slide', width="100px",  style="margin-bottom: 20px; margin-top: 10px")
-                                            div(style="background: #d9d9d9; text-align: center; padding: 12px") 
-                                                p(style="background: #fff; color: #666666; border-radius: 10px; font-size: 12px") The classes were very informative and interesting. Oluyemi did everything to make sure no one was left behind. I look forward to joining the next Data Analytics class.
-                                            p(style="margin-bottom: 20px") -Raheemat
-                                        .carousel-item
-                                            h1(style="color:#2c2b5e; margin: 10px 10px; font-size: 18px") TESTIMONIALS   
-                                            img(src="/img/rating.png", alt="", width="120px" style="margin= 10px 20px")
-                                            div(style="display:flex; justify-content:center")
-                                                img.d-block.w-20(src='/img/image18.png', alt='First slide', width="100px", style="margin-bottom: 20px; margin-top: 10px")
-                                            div(style="background: #d9d9d9; text-align: center; padding: 12px") 
-                                                p(style="background: #fff; color: #666666; border-radius: 10px; font-size: 12px") The classes were very informative and interesting. Oluyemi did everything to make sure no one was left behind. I look forward to joining the next Data Analytics class.
-                                            p(style="margin-bottom: 20px") -Raheemat
-                                            //- .carousel-item
-                                            //-   img.d-block.w-20(src='/img/rating.png', alt='Third slide')
-                                    a.carousel-control-prev(style="", href='#carouselExampleControls', role='button', data-bs-slide='prev')
-                                        span.carousel-control-prev-icon(aria-hidden='true')
-                                        span.sr-only Previous
-                                    a.carousel-control-next(, href='#carouselExampleControls', role='button', data-bs-slide='next')
-                                            span.carousel-control-next-icon(aria-hidden='true')
-                                            span.sr-only Next    
+    //Decision Area
+    .image-container-decision 
+        img(src='img/decision-img.jpg', alt='what-we-deliver')
+        .overlay-decision 
+            .decision-collection 
+                #decision-area
+                    h4 
+                        | Why 
+                        br 
+                        | choose 
+                        br 
+                        | DCBA?
+            
+                #decision-area 
+                    ul 
+                        li Expert-led courses taught by experienced professionals
+                        li Personalized study plans tailored to individual needs 
+                        li Practical, industry-relevant skills for immediate impact 
+                        li Hands-on learning through real-world projects 
+                        li Flexible learning options, including online courses 
     
-    //- .dropdown
-    //-     button.btn.btn-secondary.dropdown-toggle(type='button', data-bs-toggle='dropdown', aria-expanded='false') 
-    //-         | COURSES
-    //-     ul.dropdown-menu
-    //-         li
-    //-             a.dropdown-item(href='#') Business Analysis
-    //-         li
-    //-             a.dropdown-item(href='#') Another action
-    //-         li
-    //-             a.dropdown-item(href='#') Something else here
+    //Testimonials area
+    .mockup-testimonials
+        h4 Testimonials
+
+        .testimonial-collection
+            .testimonial-card
+                .tag-flex-area 
+                    img(src="img/testimonial/folashade.jpg", alt="folashade's-testomonial")
+                .name-tag 
+                    h6 Folashade Dagunduro
+                    p Scrum Master
+
+                .quote-mockup
+                    p 
+                        span.quote-bold “
+                        |I can't recommend this site enough! The tutorials are clear and easy to follow, making complex concepts feel accessible. I built my first app using the resources provided here, and it&rsquo;s been a game changer for my career. The community is supportive, and the updates are always relevant. A must-visit for any tech enthusiast!;
+                        span.quote-bold ”    
+
+            .testimonial-card
+                .tag-flex-area 
+                    img(src="img/testimonial/winifred.jpg", alt="winifred's-testomonial")
+                .name-tag 
+                    h6 Winifred Eze
+                    p Business Analyst
+                
+                .quote-mockup
+                    p 
+                        span.quote-bold “
+                        |This website has been invaluable for staying on top of industry trends. The in-depth articles and expert insights have helped me make informed decisions for my team. I especially love the case studies—they offer practical applications of new technologies that I can implement right away. It’s my go-to resource! 
+                        span.quote-bold ”
+                    
+
+            .testimonial-card
+                .tag-flex-area 
+                    img(src="img/testimonial/raheemat.jpg", alt="raheemat's-testomonial")
+                .name-tag 
+                    h6 Raheemat
+                    p Product Owner
+
+                .quote-mockup
+                    p
+                        span    “
+                        | The classes were very informative and interesting. Oluyemi did everything to make sure no one was left behind. I look forward to joining the next Data Analytics class.
+                        span    ”
