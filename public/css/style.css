@@ -5,14 +5,12 @@
 
 
 
-
 body {
     color: #606060;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;  
-
 }
 p{font-family: Inter;}
 h1, h2, h3, h4, h5, h6{font-family: "Inika", serif;}
@@ -2415,11 +2413,6 @@ svg#searchi {display: none;}
     height: 34rem;
     margin-bottom: 5rem;
 }
-
-/* .tag-flex-area{
-    position: relative;
-    background: red;
-} */
 
 .name-tag{
     position: relative;
