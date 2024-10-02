@@ -2091,7 +2091,17 @@ svg#searchi {display: none;}
 .special-p{
     position: absolute;
     width: 100%;
-    margin-top: -18px;
+    margin-top: -10px;
+}
+.special-p>p{
+    /* background: red; */
+    font-size: 30px !important;
+    font-weight: bold !important;
+}
+
+p.special-h3{
+    /* background: red; */
+    padding-top: 35px;
 }
 
 .slide-content h2 {
@@ -2377,6 +2387,57 @@ svg#searchi {display: none;}
 #decision-area{
     padding: 4rem;
 }
+
+/*----------------------------------------*/
+/*  SUCCESS STORY AREA
+/*----------------------------------------*/
+.success-story{
+    color: black;
+    /* height: 1rem; */
+    /* display: flex; */
+    
+}
+.success-story h4{
+    text-align: center;
+    padding: 3rem 3rem;
+}
+
+.story-pic{
+    width: 3rem;
+    height: 2.5rem;
+    background: grey;
+    border-radius: 100%;
+}
+
+.story-collection{
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 20px;
+    height: 25rem;
+    overflow-x: hidden;
+}
+.story-container{
+    flex-wrap: wrap;
+    padding-inline: 8px;
+    height: 15rem;
+    animation: marquee 10s linear infinite;
+}
+
+.story-collection:hover .story-container {
+    animation-play-state: paused;
+  }
+@keyframes marquee {
+    from {
+        transform: translateX(50%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+}
+
 
 /*----------------------------------------*/
 /*  MOCKUP TESTIMONIALS AREA

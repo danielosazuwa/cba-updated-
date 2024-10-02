@@ -1164,16 +1164,17 @@
     color: white;
   }
 
-  .special-p {
-    margin-top: 3px;
-    padding: 5px;
-    width: 90%;
-    font-size: 13px;
-  }
-  h3.special-h3 {
-    margin-top: 68px;
+  .special-p > p {
+    font-size: 25px !important;
   }
 
+  p.special-h3 {
+    padding-top: 50px;
+  }
+
+  .special-btn {
+    margin-top: -20px;
+  }
   .name-tag {
     left: 8rem;
     width: 11rem;
@@ -1332,8 +1333,21 @@
   .header-area.two .main-menu nav > ul {
     margin-left: -20px;
   }
-}
 
+  /* .story-pic {
+    background: red;
+  } */
+
+  .story-collection {
+    flex-direction: column;
+    column-gap: 5px;
+    padding: 5px;
+    height: 30rem;
+  }
+  .story-container {
+    height: 12rem;
+  }
+}
 @media (max-width: 811px) {
   .header-area.two .main-menu nav > ul {
     margin-left: -40px;
